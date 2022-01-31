@@ -2,6 +2,8 @@
 
 Ghost v4 + MySQL 5.7
 
+[![Validation](https://github.com/seanghay/ghost-docker/actions/workflows/validate.yml/badge.svg)](https://github.com/seanghay/ghost-docker/actions/workflows/validate.yml)
+
 ### Prerequisites
 
 1. `ghost.env`
