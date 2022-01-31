@@ -7,6 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-      - run: touch db.env
-      - run: touch ghost.env
-      - run: docker-compose -f docker-compose.yml config
+        run: |
+          touch db.env
+          touch ghost.env
+          docker-compose -f docker-compose.yml config
