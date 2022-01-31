@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  blog:
+    image: ghost:4
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:2368"
+    volumes:
+      - blog_data:/var/lib/ghost/content
+    env_file:
+      - ghost.env
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    restart: unless-stopped
+    env_file:
+      - db.env
+    volumes:
+      - db_data:/var/lib/mysql  
+    
+volumes:
+  blog_data:
+  db_data:
