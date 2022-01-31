@@ -43,7 +43,7 @@ docker-compose down
 
 ---
 
-# LICENSE
+### LICENSE
 
 MIT
 
